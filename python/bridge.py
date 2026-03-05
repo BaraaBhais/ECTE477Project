@@ -2,7 +2,7 @@ import requests
 import time
 import random
 
-API_KEY = "PASTE_YOUR_THINGSPEAK_WRITE_KEY"
+API_KEY = "4I4E3QPZUH66N3JL"
 
 URL = "https://api.thingspeak.com/update"
 
