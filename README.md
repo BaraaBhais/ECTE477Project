@@ -1,4 +1,5 @@
 Smart Home IoT Monitoring Project
+
 This project simulates a smart home IoT monitoring system using Python and ThingSpeak.
 
 The system generates sensor data such as:
