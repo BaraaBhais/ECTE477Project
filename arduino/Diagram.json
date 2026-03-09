@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 200, "left": 200, "attrs": {} },
+    { "type": "wokwi-photoresistor-sensor", "id": "ldr1", "top": 0, "left": 100, "attrs": {} },
+    { "type": "wokwi-gas-sensor", "id": "mq2", "top": 0, "left": 300, "attrs": {} },
+    { "type": "wokwi-pir-motion-sensor", "id": "pir1", "top": 0, "left": 500, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -47.7, "left": -24.6, "attrs": {} }
+  ],
+  "connections": [
+    ["ldr1:VCC", "uno:5V",  "red",    []],
+    ["ldr1:GND", "uno:GND", "black",  []],
+    ["ldr1:AO",  "uno:A0",  "yellow", []],
+    ["mq2:VCC",  "uno:5V",  "red",    []],
+    ["mq2:GND",  "uno:GND", "black",  []],
+    ["mq2:AO",   "uno:A1",  "orange", []],
+    ["pir1:VCC", "uno:5V",  "red",    []],
+    ["pir1:GND", "uno:GND", "black",  []],
+    ["pir1:OUT", "uno:3",   "blue",   []],
+    ["dht1:VCC", "uno:5V",  "red",    []],
+    ["dht1:GND", "uno:GND.2", "black", ["v0"]],
+    ["dht1:SDA", "uno:4",   "green",  ["v0"]]
+  ],
+  "dependencies": {}
+}
